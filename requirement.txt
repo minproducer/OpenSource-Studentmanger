@@ -1,0 +1,72 @@
+Requirement
+Login page {
+	- User
+	- Password
+}
+Admin panel {
+	User panel {
+	- Create User
+	- Change Password ()	
+	- Grant User => {
+		+ Admin: <!-- permission{
+				> Add user
+				> Modify user
+				> Delete user
+			} -->
+		+ User: <!-- permission{
+				> Show information 
+				> Modify information{
+					Name
+					Date of birth
+					Class
+					}
+				> Show marks 
+			} -->
+	}
+	- Delete user
+		}
+			}
+
+Information manage {
+	- Create student => <!-- form{
+		+ Student ID
+		+ Name
+		+ Date of birth
+		+ Sex
+		+ Folk
+		+ Class
+		+ Telephone Number of parents
+		+ Address
+		+ Folk
+			} -->
+		}
+	- Modify student => <!-- form{
+		+ Student ID
+		+ Name
+		+ Date of birth
+		+ Sex
+		+ Folk
+		+ Class
+		+ Telephone Number of parents
+		+ Address
+		+ Folk -->
+				}
+	- Delete student => <!-- form{
+		+ Confirm()
+		} -->
+	}
+	- Show information
+	- Search
+}
+Mark manage{
+	Permanent{
+	- Subject
+	- Student information get from database
+	- Factor
+	- Average mark (use javascript to process)
+	}
+	Can be changed{
+	- Mark
+	- Number of column marks
+	}
+}
