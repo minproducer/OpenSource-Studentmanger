@@ -6,7 +6,8 @@ Login page {
 Admin panel {
 	User panel {
 	- Create User
-	- Change Password ()	
+	- Change Password 
+  - Delete user
 	- Grant User => {
 		+ Admin: <!-- permission{
 				> Add user
@@ -23,11 +24,11 @@ Admin panel {
 				> Show marks 
 			} -->
 	}
-	- Delete user
+
 		}
 			}
 
-Information manage {
+Information manage (Just admin) {
 	- Create student => <!-- form{
 		+ Student ID
 		+ Name
@@ -41,32 +42,34 @@ Information manage {
 			} -->
 		}
 	- Modify student => <!-- form{
-		+ Student ID
 		+ Name
 		+ Date of birth
 		+ Sex
-		+ Folk
+		+ Folk //dân tộc
 		+ Class
 		+ Telephone Number of parents
 		+ Address
-		+ Folk -->
+		-->
 				}
 	- Delete student => <!-- form{
 		+ Confirm()
 		} -->
 	}
 	- Show information
-	- Search
+	- Search {
+    + Name
+    + Class
+  }
 }
 Mark manage{
-	Permanent{
+	Permanent // cố định {
 	- Subject
 	- Student information get from database
-	- Factor
+	- Factor // hệ số
 	- Average mark (use javascript to process)
+  - Number of column marks
 	}
 	Can be changed{
 	- Mark
-	- Number of column marks
 	}
 }
