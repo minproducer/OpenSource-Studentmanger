@@ -17,7 +17,7 @@ export default class Login extends Component {
                                     <form action="process.php" id="contact-form" method="post" className="text-center login-form">
                                         <input type="text" id="form-name" name="form-name" placeholder="Username" className="form-control" required="required"/>
                                         <input type="email" id="form-email" name="form-email" className="form-control" placeholder="Password" required="required"/>
-                                        <button type="sibmit" className="button">Login</button>
+                                        <button type="submit" className="button">Login</button>
                                     </form>
                                 </div>
                             </div>
